@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - GloriaMaria Youth Learning Center</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <header>
+    <a href="index.html" class="logo">
+      <div class="logo-boxes">
+        <span class="red"></span><span class="orange"></span><span class="yellow"></span>
+        <span class="green"></span><span class="blue"></span><span class="purple"></span>
+      </div>
+      <div class="logo-name">
+        GloriaMaria
+        <small>Youth Learning Center</small>
+      </div>
+    </a>
+
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="abc.html">ABC</a>
+      <a href="numbers.html">Numbers</a>
+      <a href="colors.html">Colors</a>
+      <a href="shapes.html">Shapes</a>
+      <a href="animals.html">Animals</a>
+      <a href="days.html">Days &amp; Months</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="header-buttons">
+      <button id="themeBtn" class="round-btn" title="Dark mode"><i class="bi bi-moon"></i></button>
+      <button id="menuBtn" class="round-btn" title="Menu"><i class="bi bi-list"></i></button>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <h1>Contact Us</h1>
+    <p class="subtitle">Parents and teachers, send us your questions or suggestions.</p>
+
+    <div class="form-box">
+      <form id="contactForm">
+        <label for="name">Your name</label>
+        <input type="text" id="name">
+        <p class="error" id="nameError"></p>
+
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        <p class="error" id="emailError"></p>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5"></textarea>
+        <p class="error" id="messageError"></p>
+
+        <button type="submit" class="btn btn-blue">Send message</button>
+        <p class="success" id="successMsg"></p>
+      </form>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 GloriaMaria Youth Learning Center | Made by Mart Gabriel Marabulas, BSIT - NU Manila</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

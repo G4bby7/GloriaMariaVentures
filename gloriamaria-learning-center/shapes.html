@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shapes - GloriaMaria Youth Learning Center</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <header>
+    <a href="index.html" class="logo">
+      <div class="logo-boxes">
+        <span class="red"></span><span class="orange"></span><span class="yellow"></span>
+        <span class="green"></span><span class="blue"></span><span class="purple"></span>
+      </div>
+      <div class="logo-name">
+        GloriaMaria
+        <small>Youth Learning Center</small>
+      </div>
+    </a>
+
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="abc.html">ABC</a>
+      <a href="numbers.html">Numbers</a>
+      <a href="colors.html">Colors</a>
+      <a href="shapes.html" class="active">Shapes</a>
+      <a href="animals.html">Animals</a>
+      <a href="days.html">Days &amp; Months</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-buttons">
+      <button id="themeBtn" class="round-btn" title="Dark mode"><i class="bi bi-moon"></i></button>
+      <button id="menuBtn" class="round-btn" title="Menu"><i class="bi bi-list"></i></button>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <h1>Shapes 🔷</h1>
+    <p class="subtitle">Tap a shape to hear its name and learn about it!</p>
+
+    <div id="lessonDetails" class="example-details" aria-live="polite"><h2>Let's learn!</h2><p>Click a card to hear it.</p></div>
+
+    <div id="lessonList"><p>Loading...</p></div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 GloriaMaria Youth Learning Center | Made by Mart Gabriel Marabulas, BSIT - NU Manila</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <script>window.LESSON = {"groups": [{"title": "", "items": [{"name": "Circle", "emoji": "⭕", "say": "A circle is round. It has no corners."}, {"name": "Square", "emoji": "🟦", "say": "A square has 4 equal sides."}, {"name": "Triangle", "emoji": "🔺", "say": "A triangle has 3 sides."}, {"name": "Rectangle", "emoji": "🚪", "say": "A rectangle has 4 sides. Two are long and two are short."}, {"name": "Star", "emoji": "⭐", "say": "A star has 5 points."}, {"name": "Heart", "emoji": "❤️", "say": "A heart is the shape of love."}, {"name": "Diamond", "emoji": "🔷", "say": "A diamond has 4 sides and looks like a kite."}, {"name": "Oval", "emoji": "🥚", "say": "An oval looks like an egg."}]}]};</script>
+  <script src="js/learn.js"></script>
+</body>
+</html>

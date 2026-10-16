@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC - GloriaMaria Youth Learning Center</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <header>
+    <a href="index.html" class="logo">
+      <div class="logo-boxes">
+        <span class="red"></span><span class="orange"></span><span class="yellow"></span>
+        <span class="green"></span><span class="blue"></span><span class="purple"></span>
+      </div>
+      <div class="logo-name">
+        GloriaMaria
+        <small>Youth Learning Center</small>
+      </div>
+    </a>
+
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="abc.html" class="active">ABC</a>
+      <a href="numbers.html">Numbers</a>
+      <a href="colors.html">Colors</a>
+      <a href="shapes.html">Shapes</a>
+      <a href="animals.html">Animals</a>
+      <a href="days.html">Days &amp; Months</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-buttons">
+      <button id="themeBtn" class="round-btn" title="Dark mode"><i class="bi bi-moon"></i></button>
+      <button id="menuBtn" class="round-btn" title="Menu"><i class="bi bi-list"></i></button>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <h1>ABC Lessons</h1>
+    <p class="subtitle">Each letter comes with a word and a picture. Can you find all the vowels?</p>
+
+    <!-- SEARCH at FILTER -->
+    <div class="toolbar">
+      <input type="text" id="searchInput" placeholder="Search a letter or word...">
+      <div>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="vowel">Vowels</button>
+        <button class="filter-btn" data-filter="consonant">Consonants</button>
+      </div>
+    </div>
+
+    <div id="searchResult" class="search-result" aria-live="polite">Search any word to identify its first letter and find its vowels and consonants.</div>
+    <div id="exampleDetails" class="example-details" aria-live="polite"><h2>Letter Explorer</h2><p>Click a letter card to hear its sound and explore four example words.</p></div>
+    <p id="countText"></p>
+
+   
+    <div class="lesson-grid" id="letterList">
+      <p>Loading letters...</p>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 GloriaMaria Youth Learning Center | Made by Mart Gabriel Marabulas, BSIT - NU Manila</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <script src="js/abc.js"></script>
+</body>
+</html>

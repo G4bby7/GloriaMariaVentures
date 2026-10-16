@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors - GloriaMaria Youth Learning Center</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+ 
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <header>
+    <a href="index.html" class="logo">
+      <div class="logo-boxes">
+        <span class="red"></span><span class="orange"></span><span class="yellow"></span>
+        <span class="green"></span><span class="blue"></span><span class="purple"></span>
+      </div>
+      <div class="logo-name">
+        GloriaMaria
+        <small>Youth Learning Center</small>
+      </div>
+    </a>
+
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="abc.html">ABC</a>
+      <a href="numbers.html">Numbers</a>
+      <a href="colors.html" class="active">Colors</a>
+      <a href="shapes.html">Shapes</a>
+      <a href="animals.html">Animals</a>
+      <a href="days.html">Days &amp; Months</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-buttons">
+      <button id="themeBtn" class="round-btn" title="Dark mode"><i class="bi bi-moon"></i></button>
+      <button id="menuBtn" class="round-btn" title="Menu"><i class="bi bi-list"></i></button>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <h1>Colors 🎨</h1>
+    <p class="subtitle">Tap a color to hear its name and see an example!</p>
+
+    <div id="lessonDetails" class="example-details" aria-live="polite"><h2>Let's learn!</h2><p>Click a card to hear it.</p></div>
+
+    <div id="lessonList"><p>Loading...</p></div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 GloriaMaria Youth Learning Center | Made by Mart Gabriel Marabulas, BSIT - NU Manila</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <script>window.LESSON = {"groups": [{"title": "", "items": [{"name": "Red", "emoji": "🍎", "say": "The apple is red.", "hex": "#ef4444"}, {"name": "Orange", "emoji": "🍊", "say": "The orange is orange.", "hex": "#f97316"}, {"name": "Yellow", "emoji": "🍌", "say": "The banana is yellow.", "hex": "#facc15"}, {"name": "Green", "emoji": "🐸", "say": "The frog is green.", "hex": "#22c55e"}, {"name": "Blue", "emoji": "🐳", "say": "The whale is blue.", "hex": "#3b82f6"}, {"name": "Purple", "emoji": "🍇", "say": "The grapes are purple.", "hex": "#a855f7"}, {"name": "Pink", "emoji": "🌸", "say": "The flower is pink.", "hex": "#ec4899"}, {"name": "Brown", "emoji": "🐻", "say": "The bear is brown.", "hex": "#92400e"}, {"name": "Black", "emoji": "🐈‍⬛", "say": "The cat is black.", "hex": "#1f2937"}, {"name": "White", "emoji": "☁️", "say": "The cloud is white.", "hex": "#ffffff"}]}]};</script>
+  <script src="js/learn.js"></script>
+</body>
+</html>
